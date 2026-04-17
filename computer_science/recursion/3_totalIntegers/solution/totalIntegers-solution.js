@@ -9,7 +9,7 @@ const totalIntegers = function (obj) {
   }
 
   const elements = Object.values(obj);
-
+  console.log(elements)
   for (const el of elements) {
     if (Number.isInteger(el)) {
       count++;
@@ -20,5 +20,6 @@ const totalIntegers = function (obj) {
   return count;
 };
 
+totalIntegers([1, 2, 3])
 // Do not edit below this line
 module.exports = totalIntegers;
